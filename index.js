@@ -81,25 +81,25 @@ function addticket(ticketColor, ticketId, ticketText ){
     
    // editable contact 
   
-   let btndiv = document.querySelector(".edit");
-   let editcontent = document.querySelector("text-area-creat");
-   console.log(btndiv);
-   btndiv.addEventListener("click",() =>{
+//    let btndiv = document.querySelector(".edit");
+//    let editcontent = document.querySelector("text-area-creat");
+//    console.log(btndiv);
+//    btndiv.addEventListener("click",() =>{
     
-    console.log(editcontent);   
-    editflag = !editflag;
-    console.log(editflag);
-    if(editflag){
-        btndiv.classList.add("removebtn");
-        editcontent.setAttribute("contenteditable", "true");
-    }else{
-        btndiv.classList.remove("removebtn");
-        editcontent.setAttribute("contenteditable", "false")
-    }
-   })
+//     console.log(editcontent);   
+//     editflag = !editflag;
+//     console.log(editflag);
+//     if(editflag){
+//         btndiv.classList.add("removebtn");
+//         editcontent.setAttribute("contenteditable", "true");
+//     }else{
+//         btndiv.classList.remove("removebtn");
+//         editcontent.setAttribute("contenteditable", "false")
+//     }
+//    })
    
  
-}
+ }
  
  
     
