@@ -58,17 +58,31 @@ submitbutton.addEventListener("click", (e) =>{
 
 function addticket(ticketColor, ticketId, ticketText ){
     let creatddiv = document.createElement("div");
+    let buttonedit = document.createElement("button");
+    buttonedit.innerText = 'edit'
+    buttonedit.setAttribute("class", "editbutton");
+    let editbale = false;
     creatddiv.setAttribute("class", "creat-contaier");
     creatddiv.innerHTML = ` <div class="color-contatiner-style ${ticketColor}"></div>
          <div class="id-number-genrate">#${ticketId}</div>
-         <div class="text-area-creat">${ticketText}</div>
-         <div class="edit-div"><button class="edit">edit</button></div>
+         <div class="text-area-creat" contenteditable=${editbale}>${ticketText}</div>
+         
        
     `;
+    creatddiv.appendChild(buttonedit)
     appenddiv.appendChild(creatddiv);
     addbutton.style.display = "none";
     flag = !flag;
     textarea.value = "";
+    buttonedit.addEventListener("click", () => {
+        // Code to execute when the "edit" button is clicke
+        editbale = !editbale;
+        const textArea = creatddiv.querySelector(".text-area-creat");
+        textArea.contentEditable = editbale;
+        // console.log(editbale.toString())
+        console.log(editbale)
+        
+    });
 
     // remove ticket
 
