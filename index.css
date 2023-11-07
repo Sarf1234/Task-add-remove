@@ -129,6 +129,7 @@ header{
     height: 15rem;  
     display: block; 
     background: red;
+    text-align: center;
 }
 .color-contatiner-style{
     height: 1rem;
@@ -202,6 +203,14 @@ header{
     color: whitesmoke;
 }
 
+.editbutton{
+    background: blue;
+    outline: none;
+    border: 1px solid green;
+    background: transparent;
+    margin-top: 2px;
+    color: white;
+}
 
 @media  screen and (max-width : 480px) {
     
